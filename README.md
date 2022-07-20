@@ -1,2 +1,1 @@
-# Appointment-App
-Website appointment with React JS, Node JS, MongoDB, Express
+# Luxury-Beauty-Spa-Webapp

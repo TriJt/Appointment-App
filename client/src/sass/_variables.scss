@@ -1,0 +1,36 @@
+$main-bg: #fff;
+$main-color: #b1812c;
+
+$txt-main-color: #000;
+$txt-second-color: #8d8d8d;
+$txt-white: #fff;
+
+$header-height: 215px;
+$header-tablet-height: 100px;
+$header-mobile-height: 70px;
+$header-shrink-height: 100px;
+
+$btn-main-bg: $main-color;
+$btn-main-color: #fff;
+
+$box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+$colors: (
+    "blue": #4267b2,
+    "orange": #fbb96b,
+    "pink": #fe7e73,
+    "white": #fff,
+    "main": $main-color,
+);
+
+$mobile-width: 600px;
+$tablet-width: 1023px;
+
+$numbers: (0, 1, 2, 3, 4, 5, 6, 7, 8);
+
+$transition: 0.3s;
+
+
+// varialbe cua file style (cu)
+$color-title: blue;
+$bg-color: #b1812c

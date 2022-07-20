@@ -1,0 +1,15 @@
+.classify {
+    &__content {
+        .buttons {
+            margin: 2.75rem;
+        }
+        td {
+            &.rank {
+                font-weight: 700;
+                font-size: 3.2rem;
+            }
+            
+            
+        }
+    }
+}

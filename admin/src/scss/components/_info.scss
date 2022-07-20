@@ -1,0 +1,42 @@
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-header--wraper {
+    width: 100%;
+}
+.info-header--button {
+    margin: 0 2px;
+}
+
+.info-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.info-content--button {
+    display: flex;
+    padding: 0 5px;
+    height: 44px;
+    
+
+}
+.info-content--input {
+    margin: 5px 0;
+    border: solid 1px #333;
+    border-radius: 20px;
+    margin: 10px;
+    width: 210px;
+}
+.page-icon >svg {
+    width: 2rem;
+}
+.info-content--date {
+    padding: 12px;
+}
+.info-content--selectCocation {
+    padding: 4px 10px;
+}

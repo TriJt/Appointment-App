@@ -1,0 +1,67 @@
+.addcustomer__header--icon {
+    display: flex;
+    justify-content: center;
+    font-size: 150px;
+    top: 100px;
+}
+.widthful {
+    width: 100% !important;
+}
+.width80 {
+    width: 80px;
+}
+.displayBlock {
+    display: block;
+}
+
+.addcustomer__content--info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+
+}
+.addcustomer__content--info-contrainer {
+    display: flex;
+    align-items: center;
+}
+.addcustomer__content--info-wrapper {
+    color: $main-bg;
+    font-weight: 600;
+}
+.adb{
+    margin-right: 250px;
+}
+.addcustomer__content--input {
+    border: solid 1px #333;
+    border-radius: 20px;
+    margin: 10px;
+    width: 400px;
+}
+.addcustomer__content--radio {
+    display: flex;
+    padding: 10px;
+}
+.addcustomer__content--radio-check {
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 200;
+}
+.addcustomer__content--radio-check > label {
+    padding: 0 20px;
+}
+
+.addcustomer__content--selectCocation {
+    padding: 4px 10px;
+    width:350px;
+}
+.addcustomer__content--date {
+    padding: 12px;
+}
+.addcustomer__footer {
+    display: flex;
+    justify-content: center;
+}
+.addcustomer__footer--button {
+    padding: 10px;
+}

@@ -1,0 +1,29 @@
+.Footer__container{
+    max-width: 1920px;
+    margin: auto;
+    background: $main-color;
+    color: white;
+    .Footer-bottom{
+        max-width: 1024px;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        .Footer-left{
+            width: 50%;
+            .Footer-title{
+                font-size: 18px;
+                margin-top: 10px;
+                font-weight: 500;
+            }
+        }
+        .Footer-right{
+            width: 50%;
+            .Footer-title{
+                font-size: 18px;
+                margin-top: 10px;
+                font-weight: 500;
+            }
+        }
+    }
+}

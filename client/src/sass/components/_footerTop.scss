@@ -1,0 +1,51 @@
+.FooterTop__container {
+  max-width: 1920px;
+  .FooterTop {
+    max-width: 1024px;
+    margin: 50px auto;
+    display: flex;
+    .FooterTop-swapper {
+      width: 32%;
+      padding: 10px;
+      margin: 5px;
+      .FooterTop-title {
+          font-weight: bold;
+          font-size: 18px;
+          margin-bottom: 10px;
+      }
+      
+      .FooterTop-text {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .FooterTop-btn{
+          padding: 10px 60px;
+          margin-bottom: 10px;
+          background: none;
+          border: 1px solid $main-color;
+          border-radius: 50px;
+          font-size: 12px;
+          font-weight: 700;
+          cursor: pointer;
+      }
+      .FooterTop-time {
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .Footer-link{
+
+        .link{
+            padding-left: 10px;
+        }
+            .link:hover{
+            border-radius: 10px;
+            color: white;
+            background-color: $main-color;
+        }
+    }
+
+    }
+  }
+  
+}

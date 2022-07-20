@@ -1,0 +1,31 @@
+@import "./variable";
+@import "./mixin";
+@import "./base";
+@import "./keyframe";
+
+// component
+@import "./components/layout";
+@import './components/info';
+@import './components/addcustomer';
+@import "./components/sidebar";
+@import "./components/topnav";
+@import "./components/dropdown";
+@import "./components/inputs";
+@import "./components/table";
+@import "./components/buttons";
+@import "./components/texteditor";
+@import "./components/popup";
+
+// pages
+
+@import "./pages/customers/";
+@import "./pages/service/";
+@import "./pages/manage/";
+@import "./pages/report/";
+@import "./pages/calendars/";
+
+
+// context
+@import "./context/dialog";
+@import "./context/formeditor";
+

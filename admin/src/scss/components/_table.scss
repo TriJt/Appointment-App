@@ -1,0 +1,105 @@
+.table-wrapper {
+	overflow-y: auto;
+}
+  
+table {
+	margin-top: 10px;
+	width: 100%;
+	min-width: 400px;
+	border-spacing: 0;
+}
+  
+
+thead {
+    border-top: 4px solid #333;
+	background-color: $second-bg;
+}
+.inline{
+}
+tr {
+	text-align: left;
+	&:nth-child(odd) {
+		background-color: #EDEDEE;
+	}
+}
+  
+th {
+	text-transform: capitalize;
+	background-color: #fff;
+	padding: 15px 10px;
+	border-top: 1px solid $txt-color;
+}
+
+td {
+	color: $txt-color;
+	padding: 15px 10px;
+	font-weight: 400;
+	border-top: 1px solid $txt-color;
+	&.controls {
+		display: flex;
+		svg {
+			width: 2rem;
+			cursor: pointer;
+		}
+		svg ~ svg {
+			margin-left: 2rem;
+		}
+		
+	}
+	&.status {
+		vertical-align: middle;
+		&::before {
+			content: "";
+			display: inline-block;
+			width: 1rem;
+			height: 1rem;
+			border-radius: 50%;
+			background-color: $main-color;
+			margin-right: 10px;
+		}
+	}
+}
+  
+tbody > tr:hover {
+	background-color: $main-color;
+	color: $txt-white;
+}
+  
+.table__pagination {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 20px;
+}
+  
+.table__pagination-item {
+	~ .table__pagination-item {
+	  margin-left: 10px;
+	}
+  
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+  
+	&.active {
+	  background-color: $main-color;
+	  color: $txt-white;
+	  font-weight: 600;
+  
+	  &:hover {
+		background-color: $main-color;
+		color: $txt-white;
+		font-weight: 600;
+	  }
+	}
+  
+	&:hover {
+	  color: $txt-white;
+	  background-color: $second-color;
+	}
+}

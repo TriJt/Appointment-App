@@ -1,0 +1,52 @@
+.layout {
+    color: $txt-color;
+    &__content {
+        padding-left: $sidebar-width;
+        min-height: 100vh;
+        font-size: 1.6rem;
+        transition: padding-left 0.4s;
+        &-main {
+            padding: 30px;
+        }
+    }
+    &.hide {
+        $sidebar-width: 8.7rem;
+        .layout__content {
+            padding-left: $sidebar-width;
+        }
+        .sidebar {
+            width: $sidebar-width;
+            justify-content: center;
+
+            &__item {
+                border: none;
+                svg {
+                    margin: 0;
+                }
+                a {
+                    justify-content: center;
+
+                    padding-left: 0;
+                    &.active ~ .sidebar__item--group {
+                        display: none;
+                    }
+                }
+                span {
+                    display: none;
+                }
+                &.control {
+                    svg {
+                        border: none;
+                        overflow: hidden;
+                        background-color: $second-bg;
+                    }
+                    &:hover {
+                        svg {
+                            animation: border 0.4s ease 1 forwards;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

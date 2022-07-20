@@ -1,0 +1,97 @@
+.Beautiful__container {
+  max-width: 1920px;
+  color: black;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  .Beautiful-block {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .beauty-Tip {
+      width: 50%;
+      border: 0.5px solid wheat;
+      box-shadow: 0px 0px 5px 5px #e5e3e3;
+      border-radius: 10px;
+      .beauty-Tip-block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        & h3 {
+          color: red;
+          padding: 5px;
+        }
+        .link {
+          padding: 5px;
+          color: rgb(119, 120, 120);
+        }
+      }
+      .beauty-card {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        padding: 5px;
+        .tip-card {
+          width: 50%;
+          .card-img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+          }
+          .card-title {
+            color: black;
+            font-size: 20px;
+            font-weight: 700;
+          }
+          .card-link {
+            color: rgb(161, 163, 165);
+          }
+        }
+      }
+    }
+
+    .Event {
+      width: 50%;
+      border: 0.5px solid wheat;
+      box-shadow: 0px 0px 5px 5px #e5e3e3;
+      border-radius: 10px;
+      .Event-block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        & h3 {
+          color: red;
+          padding: 5px;
+        }
+        .link {
+          padding: 5px;
+          color: rgb(119, 120, 120);
+        }
+      }
+      .Event-card {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        padding: 5px;
+        .tip-card {
+          width: 50%;
+          .card-img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+          }
+          .card-title {
+            color: black;
+            font-size: 20px;
+            font-weight: 500;
+          }
+          .card-link {
+            color: rgb(161, 163, 165);
+          }
+        }
+      }
+    }
+  }
+}

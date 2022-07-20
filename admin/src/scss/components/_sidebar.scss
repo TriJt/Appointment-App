@@ -1,0 +1,81 @@
+.sidebar {
+    width: $sidebar-width;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $second-bg;
+    box-shadow: $box-shadow;
+    font-size: 2rem;
+    font-weight: 400;
+    overflow: auto;
+    transition: 0.4s;
+    &__item {
+        text-transform: capitalize;
+        color: $txt-white;
+        border-bottom: 1px solid #c4c4c4;
+        cursor: pointer;
+        @include flex(unset, center);
+        flex-direction: column;
+        a {
+            display: flex;
+            align-items: center;
+            padding: 2rem 1.8rem;
+
+            padding-right: 0;
+            &.active ~ .sidebar__item--group {
+                max-height: 100%;
+            }
+            svg {
+                fill: $txt-white;
+                width: 3rem;
+                height: 3rem;
+                margin-right: 2rem;
+                &.stroke {
+                    stroke: $txt-white;
+                }
+            }
+        }
+
+        &--group {
+            font-size: 1.4rem;
+            padding-left: 50px;
+            overflow: hidden;
+            max-height: 0;
+            a {
+                padding: 15px 0;
+
+                padding-left: 2rem;
+            }
+        }
+
+        &.active,
+        &:hover {
+            & > a {
+                color: $main-color;
+                svg {
+                    fill: $main-color;
+                    &.stroke {
+                        stroke: $main-color;
+                    }
+                }
+            }
+        }
+
+        &.control {
+            height: $topnav-height;
+            align-items: center;
+            overflow: hidden;
+            svg {
+                border: 2px solid #fff;
+                border-radius: 50%;
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
+
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+}

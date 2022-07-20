@@ -1,0 +1,22 @@
+@keyframes border {
+    0% {
+        box-shadow: 15px -15px 0 2px $second-bg, -15px -15px 0 2px $second-bg, -15px 15px 0 2px $second-bg,
+            15px 15px 0 2px $second-bg, 0 0 0 2px $second-bg;
+    }
+    25% {
+        box-shadow: 0 -35px 0 2px $second-bg, -15px -15px 0 2px $second-bg, -15px 15px 0 2px $second-bg,
+            15px 15px 0 2px $second-bg, 0 0 0 2px #fff;
+    }
+    50% {
+        box-shadow: 0 -35px 0 2px $second-bg, -35px 0px 0 2px $second-bg, -15px 15px 0 2px $second-bg,
+            15px 15px 0 2px $second-bg, 0 0 0 2px #fff;
+    }
+    75% {
+        box-shadow: 0 -35px 0 2px $second-bg, -35px 0px 0 2px $second-bg, 0px 35px 0 2px $second-bg,
+            15px 15px 0 2px $second-bg, 0 0 0 2px #fff;
+    }
+    100% {
+        box-shadow: 0 -35px 0 2px $second-bg, -35px 0px 0 2px $second-bg, 0px 35px 0 2px $second-bg,
+            120px 40px 0 2px $second-bg, 0 0 0 2px #fff;
+    }
+}

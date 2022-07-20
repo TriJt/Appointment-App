@@ -1,0 +1,14 @@
+.service {
+    td {
+        &.controls {
+            svg {
+                width: 2rem;
+                cursor: pointer;
+            }
+            svg ~ svg {
+                margin-left: 2rem;
+            }
+        }
+    }
+    
+}

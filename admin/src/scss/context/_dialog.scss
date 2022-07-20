@@ -1,0 +1,40 @@
+.dialog {
+    max-width: 50rem;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 2px gray;
+    position: relative;
+    user-select: none;
+    &__title {
+        font-weight: 600;
+        font-size: 2.2rem;
+    }
+    &__message {
+        font-size: 1.8rem;
+    }
+    &__btns {
+        @include flex(center, flex-end);
+        .buttons {
+            margin: 1.5rem .5rem;
+            font-size: 1.8rem;
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: .2s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    p {
+        padding: 2rem 0;
+        border-bottom: 1px solid gray;
+    }
+}

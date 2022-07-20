@@ -1,0 +1,134 @@
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    // -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    --swiper-theme-color: #b1812c;
+
+}
+
+html{
+    font-size: 62.5%;
+    background-color: #f5f6f8;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto" , sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+@each $coler,$val in $colors {
+    .color-#{$coler}{
+        color: $val;
+    }
+    .bg-#{$coler}{
+        background-color: $val;
+    }
+}
+
+@each $var in $numbers {
+    .grid-col-#{$var}{
+        grid-template-columns: repeat($var, 1fr);
+    }
+}
+@each $var in $numbers {
+    .grid-col-md-#{$var}{
+        @include tablet{
+            grid-template-columns: repeat($var, 1fr);
+        }
+    }
+}
+@each $var in $numbers {
+    .grid-col-sm-#{$var}{
+       @include mobile{
+        grid-template-columns: repeat($var, 1fr);
+       }
+    }
+}
+.container{
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 50px;
+    margin: 0 auto;
+    
+    @include tablet{
+        padding : 0 20px;
+    }
+    @include mobile{
+        padding: 0 15px;
+    }
+}
+
+.main{
+    margin-top: $header-height;
+    margin-bottom: 2rem;
+    min-height: 100vh;
+
+    @include tablet{
+        margin-top: calc(#{$header-tablet-height} + 20px);
+    }
+    @include mobile{
+        margin-top: calc(#{$header-mobile-height} + 10px);
+    }
+}
+
+.hide-for-mobile{
+    @include breakpoint-down(medium){
+        display: none !important;
+    }
+}
+.hide-for-desktop{
+    @include breakpoint-up(large){
+        display: none !important;
+    }  
+}
+
+.grid{
+    display: grid;
+}
+
+.boder{
+
+    border-top: 1px solid #dcdcdc;
+    opacity: .8;
+    
+}
+input{
+    border: none;
+    
+}
+.button{
+
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 1.6rem;
+    &.active{
+        background-color: $main-color;
+        color: #fff;
+        font-weight: 500;
+    }
+    &-primary{
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #1374F6;
+        color: white;
+    }
+}
+.disable-link {
+    pointer-events: none !important;
+}

@@ -1,0 +1,17 @@
+.classify__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.classify__header--a {
+    display: flex;
+    
+}
+.classify__header--content {
+    padding: 0 10px;
+    color: #666;
+    font-size: 1.4rem;
+}
+.classify__header--active {
+    color: $main-bg;
+}

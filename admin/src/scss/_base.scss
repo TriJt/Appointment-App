@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    user-select: none;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #fff;
+    scroll-behavior: smooth;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: unset;
+    &:hover {
+        color: $main-color;
+    }
+}
+textarea {
+    resize: none;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    color: $txt-color;
+}
+input {
+    border: 2px solid transparent;
+    outline: 0;
+    &:focus {
+        border: 2px solid $main-color;
+    }
+}
+@each $var in $numbers {
+    .grid-col-#{$var} {
+        grid-template-columns: repeat($var, 1fr);
+    }
+}
+@each $var in $numbers {
+    .grid-col-md-#{$var} {
+        @include tablet {
+            grid-template-columns: repeat($var, 1fr);
+        }
+    }
+}
+@each $var in $numbers {
+    .grid-col-sm-#{$var} {
+        @include mobile {
+            grid-template-columns: repeat($var, 1fr);
+        }
+    }
+}
+
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 15px -15px;
+}
+
+@each $var in $numbers {
+    .col-#{$var} {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 $var * 8.333%;
+        flex: 0 0 $var * 8.333%;
+        max-width: $var * 8.333%;
+    }
+}
+@each $var in $numbers {
+    .col-sm-#{$var} {
+        @include mobile() {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 $var * 8.333%;
+            flex: 0 0 $var * 8.333%;
+            max-width: $var * 8.333%;
+        }
+    }
+}
+@each $var in $numbers {
+    .col-md-#{$var} {
+        @include tablet() {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 $var * 8.333%;
+            flex: 0 0 $var * 8.333%;
+            max-width: $var * 8.333%;
+        }
+    }
+}
+.container {
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 50px;
+    margin: 0 auto;
+
+    @include tablet {
+        padding: 0 20px;
+    }
+    @include mobile {
+        padding: 0 15px;
+    }
+}
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none !important;
+    }
+}
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none !important;
+    }
+}
+
+.grid {
+    display: grid;
+}
+.disable-link {
+    pointer-events: none !important;
+}
+.page {
+    &-header {
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 3.9rem;
+        color: $main-color;
+        text-transform: uppercase;
+        border-bottom: 1px solid #bf4bd2;
+        padding-left: 1rem;
+        padding-bottom: 0.85rem;
+        margin: 2.75rem;
+    }
+}
+
+// ghi đè thư viện tinymce
+.tox-tinymce {
+    border: 1px solid $txt-color !important;
+}
+.tox-notification { display: none !important }

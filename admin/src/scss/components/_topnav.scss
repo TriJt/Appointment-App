@@ -1,0 +1,101 @@
+.topnav {
+    height: $topnav-height;
+    background-color: $main-bg;
+    color: #fff;
+    @include flex(center, space-between);
+    position: relative;
+    &__left {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        & > span {
+            padding: 15px;
+            text-transform: uppercase;
+        }
+    }
+    &__center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        &--button {
+            width: 205px;
+            background-color: $main-color;
+            padding: 5px 0;
+            text-align: center;
+            user-select: none;
+            cursor: pointer;
+            &:first-child {
+                border-radius: 20px 0 0 20px;
+                border-right: 1px solid $main-bg;
+            }
+            &:last-child {
+                border-radius: 0 20px 20px 0;
+            }
+        }
+    }
+    &__right {
+        @include flex(center, flex-start);
+        height: 100%;
+        &-item ~ &-item {
+            margin-left: 30px;
+        }
+        &-user {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &__image {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 10px;
+                border: 1px solid white;
+                padding: 2px;
+                img {
+                    width: 100%;
+                }
+            }
+            &__name {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+        &-info {
+            @include flex(center, flex-start);
+            background-color: $main-color;
+            height: 100%;
+            padding: 0 20px;
+            margin-left: 2rem;
+        }
+        
+    }
+    &__filter {
+        &-select {
+            width: 23rem;
+            height: 100%;
+        }
+        &-input {
+            width: 26rem;
+            height: 5rem; 
+            svg {
+                font-size: 3rem;
+                fill: #817c7c;
+            }
+        }
+    }
+    .notification-item {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        svg {
+            margin-right: 20px;
+            font-size: 1.5rem;
+        }
+        &:hover {
+            color: $main-color;
+        }
+    }
+}

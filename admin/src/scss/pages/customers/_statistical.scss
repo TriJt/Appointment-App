@@ -1,0 +1,6 @@
+.statistical {
+        & .col-1 {
+            @include flex(center, center)
+            
+    }
+}
